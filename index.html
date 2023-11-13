@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/557f62d8d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                   
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+            <div class="header-text">
+                <p>Front-end Developer</p>
+                <h1>Hi, I am <span>Aman Pandey</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="IMG_20211106_075101-removebg-preview.png">
+                </div>
+                <div class="about-col-2">
+                     <h1 class="sub-title">About Me</h1>
+                     <p>My name is Aman Pandey.I have completed my bachelor's of technology from HIET college Ghaziabad and I have good knowledge of HTML, CSS, JAVA SCRIPT, BOOTSTRAP, TAILWIND, REACT JS, SQL, GIT & GITHUB.</p>
+
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Develop Website</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span></li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>web Developmement Training from Internshala(online)</li>
+                            <li><span>2021</span><br>B.Tech from HIET Ghaziabad.</li>
+                            <li><span>2017</span><br>12th passed from U.P Board.</li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p> I have good knowledge of HTML, CSS, JAVA SCRIPT, BOOTSTRAP <br> TAILWIND, REACT JS, SQL, GIT & GITHUB and I am develop responsive website.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-laptop-code"></i>
+                    <h2>Front-Web Developer</h2>
+                    <p> I have good knowledge of HTML, CSS, JAVA SCRIPT, BOOTSTRAP <br> TAILWIND, REACT JS, SQL, GIT & GITHUB and I am develop responsive website.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>Amazon clone</h3>
+                        <p>In this I am develope the amazon clone with help of HTML, CSS</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>PW Skills clone</h3>
+                        <p>In this I am develope the PW skills clone with help of HTML, Tailwind CSS</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>To-do list</h3>
+                        <p>In this I am develope the To-do list with help of HTML, CSS, java script and in this we are add items or delete.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>Quiz website</h3>
+                        <p>In this I am develope the Quiz website with help of HTML, CSS, java script and in this we are play a quiz with questions.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> amanpandey.developer@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 8429205391</p>
+                    <div class="social-icons">
+                        <a href="www.linkedin.com/in/aman-pandey1704"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/AmanPandey17"><i class="fa-brands fa-github"></i></a>
+
+                    </div>
+                    <a href="Aman_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Aman. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
